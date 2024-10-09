@@ -4,19 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-     <link rel="stylesheet" href="main.css">
+     <link rel="stylesheet" href="index.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     
      <title>Mg Auto</title>
-    <header>
+     <header class="bg-cover bg-center h-screen" style="background-image: url('https://images.unsplash.com/photo-1636761358772-798789548d25?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+
         <nav>
+
+
             <section class="nav_section1"><img src="media/IMG-20240905-WA0022-removebg-preview (1).png" alt="" id="logo"></section>
-            <section class="nav_section2"><ul>
+            <section class="nav_section2">
+              <ul class="hidden">
+                <li><a href="">HOME</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">TESTIMONIALS</a></li>
+                <li><button class="button" id="btn">CONTACT US</button></li>
             
-            </ul></section>
+            </ul>
+          </section>
+          <div class="block md:hidden">
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="text-white">Menu</button>
+        </div>
         </nav>
 
 <!--Background image and text-->
@@ -24,10 +38,10 @@
     
 
     <div class="content hero">
-        <div class="main-text">
-            <h1 class="main-text1">YOUR TRUSTED AUTO EXPERTS FOR QUALITY SERVICES & MOTOR SPARE PARTS</h1>
-            <p  class="main-text2">Car servicing| Car repair | Motor parts</p>
-            <button class="button maintext_btn">BOOK NOW</button>
+        <div class="main-text text-centre  mx-auto text-white p-10">
+            <h1 class="main-text1 text-4xl font-bold">YOUR TRUSTED AUTO EXPERTS FOR QUALITY SERVICES & MOTOR SPARE PARTS</h1>
+            <p  class="main-text2 mt-4 text-lg">Car servicing| Car repair | Motor parts</p>
+            <button class="button maintext_btn mt-6 bg-blue-900 hover:bg-red-600 text-white py-2 px-6 rounded-md">BOOK NOW</button>
         </div>
     </div>
 </header>
@@ -35,51 +49,52 @@
 <body>
     
 
-    <div class="content service">
-        <h2 class="content-header">OUR SERVICES</h2>
-        <hr>
+    <div class="content service my-4">
+        <h2 class="content-header text-3xl text-center font-bold mb-2">OUR SERVICES</h2>
+        <hr class="border-2 border-red-900 mb-2 w-[40%] rounded ml-[30%]">
         <br>
-        <div class="services-outer">
-        <div class="services one"> 
+        <div class="services-outer "></div>
+        <div class="  services one "> 
             
-            <section class="service_section first">
+            <section class="service_section first  mb-4 bg-gray-300 p-5 rounded-lg text-centre hover:bg-red-600 w-[96%] mx-auto">
                 <br>
-                <i class="fa-solid fa-car"></i>
+                
+                <i class="fa-solid fa-car text-4xl text-red-900 ml-[30% ]"></i>
                 <br>
-                <h3>Car servicing</h3>
+                <h3 class=" mt-4 text-xl">Car servicing</h3>
                 <br>
-              <p>Regular car maintenance is key to keeping your vehicle running smoothly.</p></section>
+              <p class="mt-4">Regular car maintenance is key to keeping your vehicle running smoothly.</p></section>
             
             
-            <section class="service_section second">
+            <section class=" service_section second bg-gray-300  mb-4 items-centre p-5 rounded-lg text-centre hover:bg-red-600 w-[96%] mx-auto">
                 <br>
-                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <i class="fa-solid fa-screwdriver-wrench  text-4xl text-red-700 "></i>
                 <br>
-                <h3>Car Repair</h3>
+                <h3 class="mt-4 text-xl">Car Repair</h3>
                 <br>
-            <p>From minor fixes to major repairs, MG Auto has you covered.</p></section>
+            <p class="mt-2">From minor fixes to major repairs, MG Auto has you covered.</p></section>
             
-            <section class="service_section third">
+            <section class=" mb-4 service_section third bg-gray-300 p-5 rounded-lg text-centre hover:bg-red-600 w-[96%] mx-auto">
                 <br>
-                <i class="fa-solid fa-toolbox"></i>
+                <i class="fa-solid fa-toolbox  text-4xl text-red-700"></i>
                 <br>
-                 <h3>Car Maintanence</h3>
+                 <h3 class="mt-4 text-xl">Car Maintanence</h3>
                  <br>
-                <p>Regular car maintenance is key to keeping your vehicle running smoothly.</p></section>
+                <p class="mt-2">Regular car maintenance is key to keeping your vehicle running smoothly.</p></section>
             
                 
-            <section class="service_section fourth">
+            <section class=" mb-4 service_section fourth bg-gray-300 p-5 rounded-lg text-centre hover:bg-red-600 w-[96%] mx-auto">
                 <br>
-                <i class="fa-solid fa-gear"></i>
+                <i class="fa-solid fa-gear  text-4xl text-red-700"></i>
                 <br>
-                <h3>Spare parts</h3>
+                <h3 class=" text-xl">Spare parts</h3>
                 <br>
-               <p>We offer a wide range of top-quality motor spares for all vehicle types.</p></section>
+               <p class="">We offer a wide range of top-quality motor spares for all vehicle types.</p></section>
         </div>
-          <div class="services two">
-            <p class="small_text">WHAT WE OFFER</p>
+          <div class="services two w-[97%] mx-auto">
+            <p class="small_text text-3xl text-centre">WHAT WE OFFER</p>
             
-            <h1 id="big-text">Comprehensive <br>Auto Care You Can <br>Rely On</h1>
+            <h1 id="big-text mb-4 text-red-700">Comprehensive <br>Auto Care You Can <br>Rely On</h1>
             <br> 
             <p class="small_text sec"><span class="small_text_bold">At MG Auto</span>, we specialize in keeping your vehicle in top condition with expert servicing, reliable repairs, and top-quality motor spares.
                  Drive confidently with a trusted partner by your side.</p>
@@ -87,7 +102,7 @@
               
             <br>
             <br> 
-            <button class=" button booknw">BOOK NOW</button>
+            <button class=" button booknw  bg-blue-900 hover:bg-red-600 text-white py-2 px-6 rounded-md">BOOK NOW</button>
         </div>
         </div>
 
@@ -96,18 +111,18 @@
 
     </div>
 
-    <div class="abtus">
+    <div class="abtus bg-gray-200 ">
         <br>
-        <h2 class="content-header">ABOUT US</h2>
+        <h2 class="content-header text-4xl font-bold">ABOUT US</h2>
         <hr id="horiz">
         <br>
         <br>
         <br>
 
-        <div class="about_us">
+        <div class="about_us ">
            <div class="aboutus_text">
-            <p class=" small_text small_text1">MG Auto is a proudly South African auto mechanic brand dedicated to excellence in car servicing, repair, and motor spares. With years of experience in the industry, we’ve built a reputation for delivering reliable, transparent, and affordable auto care. Our team of certified mechanics is passionate about keeping your vehicle running safely and smoothly. We believe in building long-lasting relationships with our customers based on trust, quality service, and unmatched expertise. Whether you’re here for a quick service or an in-depth repair, you can count on MG Auto to get the job done right.</p>
-            <button class=" button booknw abtbtn">BOOK NOW</button>
+            <p class=" small_text small_text1 mb-16 text-lg">MG Auto is a proudly South African auto mechanic brand dedicated to excellence in car servicing, repair, and motor spares. With years of experience in the industry, we’ve built a reputation for delivering reliable, transparent, and affordable auto care. Our team of certified mechanics is passionate about keeping your vehicle running safely and smoothly. We believe in building long-lasting relationships with our customers based on trust, quality service, and unmatched expertise. Whether you’re here for a quick service or an in-depth repair, you can count on MG Auto to get the job done right.</p>
+            <button class=" button booknw abtbtn mt-6 bg-blue-900 hover:bg-red-600 text-white py-2 px-6 rounded-md">BOOK NOW</button>
             </div>
            <div class="aboutus_photo">
             <img src="https://images.pexels.com/photos/13065694/pexels-photo-13065694.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="photos">
@@ -116,40 +131,40 @@
     </div>
 
     <div class="content reviews">
-        <p class="testimony">WHAT OUR CUSTOMERS ARE SAYING</p>
+        <p class="testimony  text-3xl text-center font-bold">WHAT OUR CUSTOMERS ARE SAYING</p>
         
         <div class="testimonals-section">
             
-        <section class="testimonials review on"><section class="stars">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
+        <section class="testimonials review on bg-gray-100 p-5 rounded-lg text-center"><section class="stars">
+            <i class="fa-solid fa-star text-yellow-700"></i>
+            <i class="fa-solid fa-star text-yellow-700"></i>
+            <i class="fa-solid fa-star text-yellow-700"></i>
+            <i class="fa-solid fa-star text-yellow-700"></i>
+            <i class="fa-solid fa-star text-yellow-700"></i>
         </section>
         <br>
         <p>"I've been bringing my car to MG Auto for years, and I wouldn’t trust anyone else. Their team is professional, friendly, and always delivers great service."</p>
         <p><b>Zinhle D.</b></p>
         </section>
-        <section class="testimonials review">
+        <section class="testimonials reviewbg-gray-100 p-5 rounded-lg text-center ">
             <section class="stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
             </section>
             <br>
             <p>"MG Auto diagnosed a problem that other mechanics missed. They fixed it quickly, and now my car runs like new. I highly recommend them!"</p>
         <p><b>Zinhle D.</b></p></section>
 
-        <section class="testimonials review">
+        <section class="testimonials review bg-gray-100 p-5 rounded-lg text-center">
             <section class="stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700" ></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
             </section><br>
             <p>"Whether it's for a simple service or more complex repairs, MG Auto always provides excellent service. Their attention to detail is amazing."</p>
         <p><b>Zinhle D.</b></p>
@@ -160,30 +175,31 @@
     
     <div class="content  last">
         
-        <h2 class="final">LET'S GET IN TOUCH</h2>
+            
+            <h2 class="final text-3xl font-bold">LET'S GET IN TOUCH</h2>
         <hr>
         <div class="contact">
-            <div class="form-outer">
-                <p class="query">Write to us your problem</p>
-                <form action="" class="form">
+            <div class="form-outer bg-blue-700">
+                <p class="query mt-4">Write to us your problem</p>
+                <form action="" class="form w-[95%] mx-auto">
           
-                    <input type="text" placeholder=" Enter Name" class="form__input1" id="name" />
+                    <input type="text" placeholder=" Enter Name" class="form__input1 w-full p-2 rounded-0 bg-gray-100 mb-4" id="name"/>
                     
                      <br>
-                    <input type="email" placeholder="Enter Email" class="form__input" id="email" />
+                    <input type="email" placeholder="Enter Email" class="form__input w-full p-2 rounded-0 bg-gray-100 mb-4" id="email" />
                     
                      <br>
-                    <input type="number" placeholder="Your Phone Number" class="form__input" id="number" />
+                    <input type="number" placeholder="Your Phone Number" class="form__input w-full p-2 rounded-0 bg-blue-100 mb-4" id="number" />
                     <br>
-                    <input type="message" id="textarea" placeholder="Explain the problem you have encountered 
+                    <input type="message" id="textarea" class="w-full p-2 rounded-0 bg-gray-100" placeholder="Explain the problem you have encountered 
                     your car brand and model"/>
                     <br>
                     <br>
-                    <button type="submit" class=" button sbmtbtn">SUBMIT</button>
+                    <button type="submit" class=" button sbmtbtn bg-blue-900 hover:bg-red-600 text-white py-2 px-6 rounded-md">SUBMIT</button>
                   </form>
             </div>
         <div class="map">
-            <iframe class="address"   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.7472477018177!2d28.194996774624094!3d-26.139782861352042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95138c3196ffd7%3A0xe0b7298996fcde56!2s2%20Tungsten%20Rd%2C%20Isando%2C%20Johannesburg%2C%201609!5e0!3m2!1sen!2sza!4v1726479811714!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="address w-full h-64  rounded-lg"   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.7472477018177!2d28.194996774624094!3d-26.139782861352042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95138c3196ffd7%3A0xe0b7298996fcde56!2s2%20Tungsten%20Rd%2C%20Isando%2C%20Johannesburg%2C%201609!5e0!3m2!1sen!2sza!4v1726479811714!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <p><b>2 Tungsten RD, Isando
                 Germiston, Johannesburg</b></p>
             <p>083 496 2978  | booking@mgauto.co.za</p>
